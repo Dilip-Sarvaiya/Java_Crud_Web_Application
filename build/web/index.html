@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dilip Sarvaiya</title>
+        <meta charset="UTF-8">
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: black;
+            }
+            .container
+            {
+                padding-bottom: 20px;
+                background-color: orange;
+            }
+            h2
+            {
+                color:white;
+            }
+        </style>
+    </head>
+    <body >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary"><h2>Crud Web Application</h2></nav>
+       <div class="container">
+            <form method ="post" action="SaveServlet">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Confirm Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="conf_pass">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" placeholder="Choose Age" name="age">
+            </div>
+            <div class="form-group">
+              <label for="branch">Select the Branch</label>
+              <select class="form-control" name="branch">
+                             <option>Computer Engineering</option>
+                             <option>Electrical Engineering</option>
+                             <option>Mechnical Engineering</option>
+                             <option>Electronics Engineering</option>
+                             <option>Civil Engineering</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="msg">Message</label>
+                 <textarea name="msg"  class="form-control" rows="3"></textarea>
+           </div>
+           <div class="form-group">   
+                <label for="gender">Gender</label>
+           </div>        
+            <div class="form-group">    
+                
+             <input type="radio" value="Male" name="gender" />Male
+             <input type="radio" value="Female" name="gender" />Female
+            </div>
+           
+  
+        <div class="form-group">
+            <label for="hobbies">Hobbies</label>
+            <div class="form-group">   
+                <input name ="hobby" value="Reading" type="checkbox">Reading
+            </div>
+             <div class="form-group">  
+                <input name="hobby" class="form-group" value="Watching" type="checkbox">Watching
+             </div>
+           
+             <div class="form-group">  
+                <input name="hobby" class="form-group" value="Playing"  type="checkbox">Playing
+             </div>
+             <div class="form-group">  
+                <input name="hobby"  value="Writing"  type="checkbox">Writing
+             </div>
+        </div>
+       <div class="form-group">
+            <input name="insert" class="btn btn-success" type="submit" value="Insert">
+            <a href="ViewServlet"><button name="delete" class="btn btn-info" type="button" value="Records">All Records</button></a>
+             
+       </div>
+        </form>
+    </div>
+    </body>
+</html>  
